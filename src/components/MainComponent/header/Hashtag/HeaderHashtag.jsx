@@ -8,7 +8,6 @@ function Hashtag (props) {
             <div className={styles.hashtagBlock}>
                 <div className={styles.hashtagName}>
                     <p className={styles.hashtagHeader}>#<span className={styles.span}>{el.title}</span></p>
-
                 </div>
             </div>
         )
