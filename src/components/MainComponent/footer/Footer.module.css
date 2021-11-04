@@ -1,0 +1,30 @@
+.footer {
+    position: fixed;
+    bottom: 0;
+    height: 72px;
+    width: 100%;
+    background: #E9E9E9;
+    border-radius: 20px 20px 0px 0px;
+    padding: 12px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.newPost {
+    width: 50px;
+    height: 50px;
+    background: #ACACAC;
+    border-radius: 50%;
+}
+
+.newPost {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 70px;
+}
+
+.newPostIcon {
+    font-size: 24px;
+}

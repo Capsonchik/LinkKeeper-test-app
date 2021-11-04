@@ -1,0 +1,30 @@
+.hashtagBlock {
+    /*min-width: 160px;*/
+    width: auto;
+    height: 62px;
+    background: #C4C4C4;
+    border-radius: 20px;
+}
+
+.hashtagBlock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.hashtagName {
+    margin: 0px 10px 0px 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hashtagHeader {
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.span {
+    margin-left: 3px;
+}

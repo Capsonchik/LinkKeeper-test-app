@@ -1,0 +1,43 @@
+.mainLink {
+    width: 334px;
+    margin-bottom: 44px;
+}
+
+.blockHeader {
+    background: #EFEFEF;
+    border-radius: 0px 20px 0px 0px;
+}
+
+.blockHeader h4 {
+    font-size: 14px;
+    line-height: 16px;
+    padding: 7px 0px 7px 12px;
+}
+
+.blockInfo {
+    background: #C4C4C4;
+    border-radius: 0px 0px 0px 20px;
+    padding-left: 12px;
+}
+
+.description {
+    padding-top: 5px;
+    padding-bottom: 15px;
+    font-size: 10px;
+    line-height: 12px;
+}
+
+.link {
+    padding-bottom: 17px;
+    font-size: 12px;
+    line-height: 14px;
+    white-space: nowrap; /* Отменяем перенос текста */
+    overflow: hidden; /* Обрезаем содержимое */
+    text-overflow: ellipsis;
+}
+
+.linkHashtag {
+    padding-bottom: 11px;
+    font-size: 10px;
+    line-height: 12px;
+}
