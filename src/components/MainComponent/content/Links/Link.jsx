@@ -3,7 +3,6 @@ import React from 'react'
 
 let Link = (props) => {
     const links = props.links
-    console.log(links)
     const renderLinks = links.map(el => {
         return(
             <>
