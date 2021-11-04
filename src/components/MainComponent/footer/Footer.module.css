@@ -3,7 +3,7 @@
     bottom: 0;
     height: 72px;
     width: 100%;
-    background: #E9E9E9;
+    background: #A9A2C8;
     border-radius: 20px 20px 0px 0px;
     padding: 12px;
     display: flex;
@@ -14,8 +14,9 @@
 .newPost {
     width: 50px;
     height: 50px;
-    background: #ACACAC;
+    background: #CEC3FC;
     border-radius: 50%;
+    border: 1px solid #A9A2C8;
 }
 
 .newPost {

@@ -2,6 +2,7 @@ import React, {useEffect, useState} from "react";
 import Header from "./header/Header";
 import Content from "./content/Content";
 import Footer from "./footer/Footer";
+import s from './mainComponent.module.css'
 
 // API = https://anatolykulikov.ru/demo/linkeeper/
 
@@ -27,7 +28,7 @@ function MainComponent() {
     }, [])
 
     return(
-        <div>
+        <div className={s.mainContent}>
             <Header data={state.data.tags} />
             <Content data ={state.data.links} />
             <Footer />

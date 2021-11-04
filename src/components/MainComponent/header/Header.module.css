@@ -1,8 +1,11 @@
 .mainHeader {
     height: 192px;
-    background-color: #E9E9E9;
+    background-color: #A9A2C8;
     border-radius: 0 0 20px 20px;
     padding: 12px;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .headerTop {

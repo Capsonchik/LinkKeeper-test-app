@@ -2,6 +2,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 22px;
+    margin-top: 212px;
+    margin-bottom: 72px;
     overflow: hidden;
+}
+
+.contentBlock::-webkit-scrollbar {
+    width: 0;
 }
