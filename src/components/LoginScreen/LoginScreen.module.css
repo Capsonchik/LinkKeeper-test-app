@@ -1,0 +1,55 @@
+.main {
+    max-width: 1020px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.title {
+    margin-top: 60px;
+    margin-bottom: 25px;
+}
+
+.block {
+    width: 200px;
+    height: 265px;
+    background-color: #000;
+}
+
+.slider{
+
+}
+
+.text {
+    width: 230px;
+    text-align: center;
+    margin-top: 45px;
+    margin-bottom: 15px;
+}
+
+.btnLogin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 25px;
+    margin-top: 25px;
+    width: 287px;
+    height: 52px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.img{
+    /*margin-left: 15px;*/
+}
+/*# sourceMappingURL=style.css.map */
