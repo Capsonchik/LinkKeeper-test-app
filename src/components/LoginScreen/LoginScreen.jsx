@@ -1,30 +1,109 @@
 import s from './LoginScreen.module.css'
-import {Swiper} from 'swiper'
-import SwiperSlide from 'react'
+import SwiftSlider from 'react-swift-slider'
+
+// import { fa-brands fa-google } from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
 const LoginScreen = () => {
-    return(
+
+    const data = [
+        {'id': '1', 'src': 'https://media.mfbproject.co.za/repos/2017_alfa-romeo_stelvio_leaked_02.jpg'},
+        {'id': '2', 'src': 'https://media.mfbproject.co.za/repos/2017_alfa_romeo_stelvioquadrifoglio_official_09.jpg'},
+        {
+            'id': '3',
+            'src': 'https://media.mfbproject.co.za/repos/2018-alfa-romeo-stelvio-quadrifoglio-specs-photos-speed-2.jpg'
+        },
+        {
+            'id': '4',
+            'src': 'https://media.mfbproject.co.za/repos/alfa-romeo-giulia-quadrifoglio-2017-us-wallpapers-and-hd-images-13.jpg'
+        },
+        {'id': '5', 'src': 'https://media.mfbproject.co.za/repos/ARWP_Infra_Desk_1920_1080_Quad.png'}
+    ];
+
+    return (
         <div className={s.main}>
             <h1 className={s.title}>Lin Keeper</h1>
             {/*<div className={s.block}></div>*/}
-            <Swiper
-                spaceBetween={50}
-                slidesPerView={3}
-                onSlideChange={() => console.log('slide change')}
-                onSwiper={(swiper) => console.log(swiper)}
-            >
-                <SwiperSlide>Slide 1</SwiperSlide>
-                <SwiperSlide>Slide 2</SwiperSlide>
-                <SwiperSlide>Slide 3</SwiperSlide>
-                <SwiperSlide>Slide 4</SwiperSlide>
-                ...
-            </Swiper>
+            <SwiftSlider className={s.slider} data={data} height={264}/>
             <p className={s.text}>(Текст про то, что это за приложение)</p>
-            <button className={s.btnLogin}>Вход с помощью Google</button>
-            <button className={s.btnLogin}>Вход с помощью Facebook</button>
-            <button className={s.btnLogin}>Вход с помощью VK</button>
-            <button className={s.btnLogin}>Вход с помощью Yandex</button>
+            <button className={s.btnLogin}>Вход с помощью Google<svg className={s.img} width="24" height="24" viewBox="0 0 24 24"
+                                                                      fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M11.956 10.356V13.807H16.748C16.302 16 14.435 17.26
+                    11.956 17.26C9.06854 17.2203 6.74865 14.8682 6.74865
+                     11.9805C6.74865 9.09278 9.06854 6.74074 11.956 6.701C13.1562
+                      6.69956 14.3195 7.11608 15.246 7.879L17.846 5.279C14.8636
+                       2.65707 10.508 2.31984 7.15755 4.45145C3.8071 6.58306 2.26702
+                       10.6712 3.37824 14.4836C4.48947 18.296 7.98494 20.9164
+                       11.956 20.914C16.423 20.914 20.485 17.665 20.485 11.98C20.4781
+                        11.4326 20.411 10.8877 20.285 10.355L11.956 10.356Z"
+                    fill="#343434"/>
+            </svg>
+            </button>
+            <button className={s.btnLogin}>Вход с помощью Facebook <svg className={s.img} width="24" height="24" viewBox="0 0 24 24"
+                                                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M2.00201 12.002C2.00318 16.9214 5.58042 21.11 10.439
+                     21.881V14.892H7.90201V12.002H10.442V9.802C10.3285 8.75954
+                      10.6845 7.72059 11.4137 6.96693C12.1428 6.21327 13.1694
+                       5.82301 14.215 5.902C14.9656 5.91412 15.7142 5.98096
+                        16.455 6.102V8.561H15.191C14.7559 8.504 14.3184 8.64772
+                         14.0018 8.95167C13.6852 9.25561 13.5238 9.68688 13.563
+                          10.124V12.002H16.334L15.891 14.893H13.563V21.881C18.8175
+                           21.0506 22.5021 16.2518 21.9475 10.9611C21.3929 5.67037
+                            16.7933 1.73993 11.4808 2.01718C6.16838 2.29443 2.00286
+                             6.68231 2.00201 12.002Z"
+                    fill="#343434"/>
+            </svg>
+            </button>
+            <button className={s.btnLogin}>Вход с помощью VK <svg className={s.img} width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                                  xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M1.684 1.684C0 3.368 0 6.0792 0 11.5V12.5C0 17.92 0 20.632
+                       1.684 22.316C3.368 24 6.0792 24 11.5 24H12.5C17.92 24 20.632
+                        24 22.316 22.316C24 20.632 24 17.9208 24 12.5V11.5C24 6.08
+                         24 3.368 22.316 1.684C20.632 0 17.9208 0 12.5 0H11.5C6.08
+                          0 3.368 0 1.684 1.684ZM4.75039 7.5H6.49999C6.94719 7.5 7.11519
+                           7.696 7.28319 8.1808C8.13919 10.6736 9.58239 12.8528
+                            10.1752 12.8528C10.3984 12.8528 10.5 12.7504 10.5 12.1848V9.608C10.4599
+                             8.87446 10.2036 8.55715 10.0138 8.32214C9.89664 8.17705
+                              9.80479 8.06333 9.80479 7.9024C9.80479 7.7064 9.97199
+                               7.5 10.2496 7.5H13C13.3712 7.5 13.5 7.6984 13.5
+                                8.1432V11.6104C13.5 11.9808 13.6608 12.1112 13.772
+                                 12.1112C13.9944 12.1112 14.18 11.9808 14.588 11.5728C15.8488
+                                  10.164 16.7384 7.9952 16.7384 7.9952C16.8496 7.7352 17.0552
+                                   7.5 17.5 7.5H19.2496C19.7792 7.5 19.8912 7.7728 19.7792
+                                    8.1432C19.5568 9.1632 17.4248 12.1664 17.4248 12.1664C17.2392
+                                     12.4632 17.1648 12.6112 17.4248 12.9448C17.5165 13.0733
+                                      17.7123 13.2652 17.9361 13.4846C18.165 13.7089 18.4233
+                                      13.9621 18.6296 14.2056C19.3816 15.0512 19.948 15.7648
+                                      20.1056 16.256C20.2504 16.7496 20 17 19.5 17H17.7496C17.281 17 17.0452 16.7376
+                                       16.5353 16.17C16.3192 15.9295 16.0539 15.6342 15.7008
+                                       15.2808C14.6616 14.28 14.2176 14.1504 13.9576 14.1504C13.6056
+                                        14.1504 13.5 14.2504 13.5 14.7504V16.32C13.5 16.7496 13.3624
+                                         17 12.2496 17C10.396 17 8.35839 15.8744 6.91279 13.7976C4.74319
+                                          10.7576 4.15039 8.4584 4.15039 7.9952C4.15039 7.7352 4.25039 7.5 4.75039 7.5Z"
+                      fill="#343434"/>
+            </svg>
+            </button>
+            <button className={s.btnLogin}>Вход с помощью Yandex <svg className={s.img} width="24" height="24" viewBox="0 0 24 24"
+                                                                      fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274
+                     0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12Z"
+                    fill="#ED1E24"/>
+                <path
+                    d="M13.4558 12.6336H12.6134C11.2898 12.6336 10.0062 11.7121 10.0062
+                     9.40791C10.0062 7.00808 11.2096 6.02882 12.4328 6.02882H13.4558V12.6336ZM14.7794
+                      4.80001H12.4932C10.2466 4.80001 8.34178 6.43229 8.34178 9.60019C8.34178
+                       11.5009 9.26426 12.9026 10.9089 13.5934L7.84021 18.8927C7.73978 19.0655
+                        7.84021 19.2 8.00045 19.2H9.4245C9.54468 19.2 9.62535 19.1617 9.66541
+                        19.0655L12.4532 13.8624H13.4558V19.0655C13.4558 19.1233 13.5161 19.2
+                         13.5962 19.2H14.8397C14.9599 19.2 15 19.1422 15 19.0466V4.99177C15
+                         4.8578 14.9199 4.80001 14.7794 4.80001Z"
+                    fill="white"/>
+            </svg></button>
         </div>
     )
 }

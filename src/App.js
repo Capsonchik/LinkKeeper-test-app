@@ -6,7 +6,9 @@ import LoginScreen from "./components/LoginScreen/LoginScreen";
 import AddLink from "./components/AddLink/AddLink";
 
 
+
 function App() {
+
     return (
         <BrowserRouter>
             <div className='container'>
@@ -14,10 +16,13 @@ function App() {
                     <Route exact path='/'>
                         <LoginScreen/>
                     </Route>
-                    <Route exact path='/main'>
+                    <Route path='/main'>
                         <MainComponent/>
                     </Route>
                 </Switch>
+                <Route exact path ='/main/addlink'>
+                    <AddLink />
+                </Route>
             </div>
         </BrowserRouter>
     );

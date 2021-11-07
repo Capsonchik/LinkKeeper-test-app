@@ -3,25 +3,23 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faBars, faHome, faPlus} from "@fortawesome/free-solid-svg-icons";
 import {Link} from "react-router-dom";
 
+
 const Footer = () => {
     const newPostHandler = () => {
         console.log('work')
     }
 
-    return(
+    return (
         <div className={styles.footer}>
-            <FontAwesomeIcon icon={faHome} />
-            {/*<div  className={styles.newPost}>*/}
-            {/*    <FontAwesomeIcon className={styles.newPostIcon} icon={faPlus} />*/}
-            {/*</div>*/}
-            <button onClick={newPostHandler} className={styles.newPost}>
-                <Link to='/main/addlink'>
-                    <FontAwesomeIcon className={styles.newPostIcon} icon={faPlus} />
-                </Link>
-            </button>
-            <FontAwesomeIcon icon={faBars} />
+            <Link className={styles.home_icon} to='/'>
+                <FontAwesomeIcon icon={faHome}/>
+            </Link>
+            <Link className={styles.newPost} to='/main/addlink'>
+                <FontAwesomeIcon className={styles.newPostIcon} icon={faPlus}/>
+            </Link>
+            <FontAwesomeIcon icon={faBars}/>
         </div>
-    )
+    );
 }
 
 export default Footer;

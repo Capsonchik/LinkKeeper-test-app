@@ -1,5 +1,5 @@
 .main {
-    max-width: 1200px;
+    max-width: 1020px;
     margin: 0 auto;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -24,19 +24,32 @@
     background-color: #000;
 }
 
+.slider{
+
+}
+
 .text {
     width: 230px;
     text-align: center;
-    margin-top: 15px;
+    margin-top: 45px;
     margin-bottom: 15px;
 }
 
 .btnLogin {
-    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 25px;
+    margin-top: 25px;
     width: 287px;
     height: 52px;
-    background-color: "#000";
     border-radius: 20px;
     cursor: pointer;
+}
+
+.img{
+    /*margin-left: 15px;*/
 }
 /*# sourceMappingURL=style.css.map */

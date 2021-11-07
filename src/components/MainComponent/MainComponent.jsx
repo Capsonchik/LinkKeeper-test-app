@@ -3,6 +3,7 @@ import Header from "./header/Header";
 import Content from "./content/Content";
 import Footer from "./footer/Footer";
 import s from './mainComponent.module.css'
+import AddLink from "../AddLink/AddLink";
 
 // API = https://anatolykulikov.ru/demo/linkeeper/
 
